@@ -42,7 +42,7 @@ body {
     min-height: 100vh;
     background-color: var(--light-gray);
     color: var(--black);
-    padding: 20px;
+    padding: 16px;
     line-height: 1.5;
 }
 
@@ -54,14 +54,15 @@ body {
 .welcome-card {
     background: var(--white);
     border-radius: var(--border-radius);
-    padding: 24px;
-    margin-bottom: 20px;
+    padding: 20px;
+    margin-bottom: 16px;
     box-shadow: 0 4px 20px rgba(67, 97, 238, 0.1);
     border: 1px solid rgba(67, 97, 238, 0.1);
 }
 
 .welcome-text {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.4;
 }
 
 .user-name {
@@ -75,16 +76,16 @@ body {
 .loan-card {
     background: var(--white);
     border-radius: var(--border-radius);
-    padding: 24px;
-    margin-bottom: 24px;
+    padding: 20px;
+    margin-bottom: 20px;
     box-shadow: 0 4px 20px rgba(67, 97, 238, 0.1);
     border: 1px solid rgba(67, 97, 238, 0.1);
 }
 
 .card-title {
     text-align: center;
-    font-size: 1.3rem;
-    margin-bottom: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 16px;
     background: var(--gradient);
     -webkit-background-clip: text;
     background-clip: text;
@@ -94,15 +95,15 @@ body {
 
 .loan-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Always 2 columns */
-    gap: 12px; /* Reduced gap for better spacing */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 }
 
 .loan-option {
     background: var(--light-gray);
     border: 1px solid rgba(67, 97, 238, 0.2);
-    border-radius: var(--border-radius);
-    padding: 16px 10px; /* Reduced padding for better fit */
+    border-radius: 12px;
+    padding: 14px 8px;
     text-align: center;
     cursor: pointer;
     transition: all 0.3s;
@@ -120,17 +121,17 @@ body {
 }
 
 .loan-amount {
-    font-size: 1.1rem; /* Slightly smaller font */
+    font-size: 1rem;
     font-weight: 700;
     background: var(--gradient);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 
 .processing-fee {
-    font-size: 0.8rem; /* Slightly smaller font */
+    font-size: 0.75rem;
     color: var(--gray);
 }
 
@@ -141,9 +142,9 @@ body {
     color: var(--white);
     border: none;
     border-radius: var(--border-radius);
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
-    margin: 20px 0;
+    margin: 16px 0;
     cursor: pointer;
     transition: all 0.3s;
     box-shadow: 0 4px 15px rgba(67, 97, 238, 0.3);
@@ -166,7 +167,7 @@ body {
 
 .error-message {
     color: #dc3545;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     text-align: center;
     margin-top: 12px;
     display: none;
@@ -174,17 +175,17 @@ body {
 
 .app-promo {
     text-align: center;
-    margin-top: 24px;
+    margin-top: 20px;
     display: none;
     background: var(--white);
-    padding: 20px;
+    padding: 16px;
     border-radius: var(--border-radius);
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     border: 1px solid rgba(67, 97, 238, 0.1);
 }
 
 .app-promo-text {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     color: var(--primary);
     font-weight: 500;
     margin-bottom: 12px;
@@ -195,12 +196,12 @@ body {
     border: 1px solid var(--primary);
     color: var(--primary);
     border-radius: var(--border-radius);
-    padding: 12px 20px;
-    font-size: 0.95rem;
+    padding: 10px 16px;
+    font-size: 0.9rem;
     font-weight: 500;
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     transition: all 0.3s;
 }
 
@@ -211,10 +212,10 @@ body {
 .back-link {
     display: block;
     text-align: center;
-    margin-top: 28px;
+    margin-top: 24px;
     color: var(--gray);
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     transition: color 0.3s;
 }
 
@@ -222,59 +223,59 @@ body {
     color: var(--primary);
 }
 
-/* Mobile-Optimized Payment Confirmation Modal */
+/* Ultra-Mobile Optimized Payment Confirmation Modal */
 .mobile-confirm-modal {
     background: var(--white);
-    border-radius: 20px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
     overflow: hidden;
-    width: 90vw;
-    max-width: 400px;
+    width: 92vw;
+    max-width: 340px;
     margin: 0 auto;
 }
 
 .mobile-confirm-header {
     background: var(--gradient);
-    padding: 20px;
+    padding: 18px;
     text-align: center;
     color: white;
     position: relative;
 }
 
 .mobile-confirm-icon {
-    font-size: 42px;
+    font-size: 36px;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .mobile-confirm-title {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 700;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
 
 .mobile-confirm-subtitle {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     opacity: 0.9;
 }
 
 .mobile-confirm-body {
-    padding: 20px;
+    padding: 18px;
 }
 
 .mobile-loan-summary {
     background: #f8f9ff;
-    border-radius: 12px;
-    padding: 16px;
-    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 14px;
+    margin-bottom: 16px;
 }
 
 .mobile-summary-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 12px;
-    padding-bottom: 12px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
     border-bottom: 1px solid rgba(67, 97, 238, 0.1);
 }
 
@@ -287,80 +288,80 @@ body {
 .mobile-summary-label {
     color: #666;
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 .mobile-summary-value {
     color: #4361ee;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .mobile-payment-highlight {
     background: linear-gradient(135deg, #4361ee 0%, #3f37c9 100%);
     color: white;
-    padding: 16px;
-    border-radius: 12px;
+    padding: 14px;
+    border-radius: 10px;
     text-align: center;
-    margin: 16px 0;
+    margin: 14px 0;
 }
 
 .mobile-payment-amount {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 800;
-    margin: 8px 0;
+    margin: 6px 0;
 }
 
 .mobile-payment-description {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     opacity: 0.9;
 }
 
 .mobile-phone-display {
     background: rgba(67, 97, 238, 0.08);
-    padding: 14px;
-    border-radius: 10px;
-    margin: 16px 0;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 14px 0;
     text-align: center;
     font-weight: 600;
     color: #4361ee;
     border: 1px solid rgba(67, 97, 238, 0.15);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 .mobile-confirm-footer {
-    padding: 16px 20px 20px;
+    padding: 14px 16px 16px;
     text-align: center;
 }
 
 .mobile-confirm-note {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     color: #666;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     line-height: 1.4;
 }
 
 .mobile-confirm-buttons {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
 }
 
 .mobile-confirm-btn {
-    padding: 16px;
+    padding: 14px;
     background: var(--gradient);
     color: white;
     border: none;
-    border-radius: 12px;
+    border-radius: 10px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s;
     box-shadow: 0 4px 12px rgba(67, 97, 238, 0.3);
-    font-size: 1rem;
+    font-size: 0.95rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 6px;
 }
 
 .mobile-confirm-btn:active {
@@ -368,127 +369,206 @@ body {
 }
 
 .mobile-cancel-btn {
-    padding: 16px;
+    padding: 14px;
     background: #f8f9fa;
     color: #666;
     border: 1px solid #e0e0e0;
-    border-radius: 12px;
+    border-radius: 10px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s;
-    font-size: 1rem;
+    font-size: 0.95rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 6px;
 }
 
 .mobile-cancel-btn:active {
     background: #e9ecef;
 }
 
-/* STK Push Modal Styles - Mobile Optimized */
+/* STK Push Modal Styles - Ultra Mobile Optimized */
 .mobile-stk-modal {
     background: var(--white);
-    border-radius: 20px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
     overflow: hidden;
-    width: 90vw;
-    max-width: 400px;
+    width: 92vw;
+    max-width: 340px;
     margin: 0 auto;
 }
 
 .mobile-stk-header {
     background: var(--gradient);
-    padding: 20px;
+    padding: 18px;
     text-align: center;
     color: white;
 }
 
 .mobile-stk-icon {
-    font-size: 42px;
-    margin-bottom: 10px;
+    font-size: 36px;
+    margin-bottom: 8px;
     color: white;
 }
 
 .mobile-stk-body {
-    padding: 20px;
+    padding: 18px;
     text-align: center;
 }
 
 .mobile-stk-amount {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #4361ee;
-    margin: 12px 0;
+    margin: 10px 0;
 }
 
 .mobile-stk-phone {
     background: rgba(67, 97, 238, 0.08);
-    padding: 14px;
-    border-radius: 10px;
-    margin: 16px 0;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 14px 0;
     font-weight: 600;
     color: #4361ee;
     border: 1px solid rgba(67, 97, 238, 0.15);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 .mobile-stk-instructions {
     background: #f8f9ff;
-    padding: 16px;
-    border-radius: 12px;
-    margin: 20px 0;
+    padding: 14px;
+    border-radius: 10px;
+    margin: 16px 0;
     text-align: left;
     border-left: 4px solid #4361ee;
 }
 
 .mobile-stk-instructions ol {
-    padding-left: 20px;
-    margin: 10px 0;
+    padding-left: 18px;
+    margin: 8px 0;
 }
 
 .mobile-stk-instructions li {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     line-height: 1.4;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 .mobile-stk-footer {
     background: rgba(67, 97, 238, 0.05);
-    padding: 16px;
+    padding: 14px;
     text-align: center;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     color: #666;
     border-top: 1px solid rgba(67, 97, 238, 0.1);
 }
 
-/* Responsive adjustments for very small screens */
+/* Responsive adjustments for very narrow screens */
 @media (max-width: 360px) {
+    body {
+        padding: 12px;
+    }
+    
+    .container {
+        max-width: 100%;
+    }
+    
+    .welcome-card,
+    .loan-card {
+        padding: 16px;
+        margin-bottom: 14px;
+    }
+    
     .loan-grid {
+        grid-template-columns: repeat(2, 1fr);
         gap: 8px;
     }
     
     .loan-option {
-        padding: 12px 8px;
+        padding: 12px 6px;
+        border-radius: 10px;
     }
     
     .loan-amount {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
     
     .processing-fee {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
+    }
+    
+    .btn-apply {
+        padding: 14px;
+        font-size: 0.95rem;
+        margin: 14px 0;
     }
     
     .mobile-confirm-modal,
     .mobile-stk-modal {
-        width: 95vw;
+        width: 96vw;
+        max-width: 320px;
     }
     
     .mobile-confirm-body,
     .mobile-stk-body {
         padding: 16px;
+    }
+    
+    .mobile-confirm-header,
+    .mobile-stk-header {
+        padding: 16px;
+    }
+    
+    .mobile-confirm-icon,
+    .mobile-stk-icon {
+        font-size: 32px;
+    }
+    
+    .mobile-confirm-title {
+        font-size: 1rem;
+    }
+    
+    .mobile-confirm-subtitle {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .loan-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    
+    .mobile-confirm-modal,
+    .mobile-stk-modal {
+        width: 98vw;
+        max-width: 300px;
+    }
+    
+    .mobile-confirm-body,
+    .mobile-stk-body {
+        padding: 14px;
+    }
+    
+    .mobile-confirm-header,
+    .mobile-stk-header {
+        padding: 14px;
+    }
+    
+    .mobile-loan-summary {
+        padding: 12px;
+    }
+    
+    .mobile-summary-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+    
+    .mobile-summary-label,
+    .mobile-summary-value {
+        font-size: 0.8rem;
     }
 }
     </style>
@@ -744,8 +824,6 @@ body {
                                 </div>
                             </div>
                             
-                        
-                            
                             <div class="mobile-phone-display">
                                 <i class="fas fa-mobile-alt"></i> ${userData.phone_number}
                             </div>
@@ -757,7 +835,7 @@ body {
                             </div>
                             <div class="mobile-confirm-buttons">
                                 <button class="mobile-confirm-btn" onclick="Swal.clickConfirm()">
-                                    <i class="fas fa-lock"></i> Pay Ksh ${selectedLoan.fee}
+                                    <i class="fas fa-check-circle"></i> Proceed
                                 </button>
                                 <button class="mobile-cancel-btn" onclick="Swal.close()">
                                     <i class="fas fa-times"></i> Cancel
@@ -839,9 +917,9 @@ body {
                                     title: 'Payment Successful!',
                                     html: `
                                         <div style="text-align:center;">
-                                            <i class="fas fa-check-circle" style="font-size: 64px; color: #4caf50; margin-bottom: 16px;"></i>
-                                            <p>Your loan of <strong>Ksh ${selectedLoan.amount.toLocaleString()}</strong> has been approved!</p>
-                                            <p style="color: #666; font-size: 0.9rem; margin-top: 12px;">Processing disbursement...</p>
+                                            <i class="fas fa-check-circle" style="font-size: 52px; color: #4caf50; margin-bottom: 14px;"></i>
+                                            <p style="font-size: 1rem;">Your loan of <strong>Ksh ${selectedLoan.amount.toLocaleString()}</strong> has been approved!</p>
+                                            <p style="color: #666; font-size: 0.85rem; margin-top: 10px;">Processing disbursement...</p>
                                         </div>
                                     `,
                                     icon: 'success',
@@ -871,8 +949,8 @@ body {
                     Swal.fire({
                         title: 'Payment Failed',
                         html: `
-                            <p>${error.message || 'Unable to process payment. Please try again.'}</p>
-                            <p style="font-size: 0.85rem; color: #666; margin-top: 12px;">
+                            <p style="font-size: 0.9rem;">${error.message || 'Unable to process payment. Please try again.'}</p>
+                            <p style="font-size: 0.8rem; color: #666; margin-top: 10px;">
                                 Please ensure your phone number is correct and try again.
                             </p>
                         `,
