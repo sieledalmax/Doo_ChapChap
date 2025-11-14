@@ -222,62 +222,54 @@ body {
     color: var(--primary);
 }
 
-/* Payment Confirmation Modal Styles */
-.confirmation-modal {
-    background: linear-gradient(145deg, #ffffff 0%, #f8f9ff 100%);
+/* Mobile-Optimized Payment Confirmation Modal */
+.mobile-confirm-modal {
+    background: var(--white);
     border-radius: 20px;
-    border: 3px solid #4361ee;
-    box-shadow: 0 15px 40px rgba(67, 97, 238, 0.25);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
     overflow: hidden;
-    max-width: 450px !important;
+    width: 90vw;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
-.confirmation-header {
-    background: linear-gradient(135deg, #4361ee 0%, #3f37c9 100%);
-    padding: 25px;
+.mobile-confirm-header {
+    background: var(--gradient);
+    padding: 20px;
     text-align: center;
     color: white;
     position: relative;
 }
 
-.confirmation-icon {
-    font-size: 52px;
-    margin-bottom: 15px;
+.mobile-confirm-icon {
+    font-size: 42px;
     color: white;
-    background: rgba(255, 255, 255, 0.2);
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 15px;
+    margin-bottom: 10px;
 }
 
-.confirmation-title {
-    font-size: 1.5rem;
+.mobile-confirm-title {
+    font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 5px;
 }
 
-.confirmation-subtitle {
-    font-size: 0.9rem;
+.mobile-confirm-subtitle {
+    font-size: 0.85rem;
     opacity: 0.9;
 }
 
-.confirmation-body {
-    padding: 30px 25px;
-}
-
-.loan-summary {
-    background: linear-gradient(135deg, #f8f9ff 0%, #eef1ff 100%);
-    border-radius: 15px;
+.mobile-confirm-body {
     padding: 20px;
-    margin-bottom: 25px;
-    border: 2px dashed #4361ee;
 }
 
-.summary-item {
+.mobile-loan-summary {
+    background: #f8f9ff;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+.mobile-summary-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -286,175 +278,187 @@ body {
     border-bottom: 1px solid rgba(67, 97, 238, 0.1);
 }
 
-.summary-item:last-child {
+.mobile-summary-item:last-child {
     border-bottom: none;
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
-.summary-label {
+.mobile-summary-label {
     color: #666;
     font-weight: 500;
+    font-size: 0.9rem;
 }
 
-.summary-value {
+.mobile-summary-value {
     color: #4361ee;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
-.payment-highlight {
+.mobile-payment-highlight {
     background: linear-gradient(135deg, #4361ee 0%, #3f37c9 100%);
     color: white;
-    padding: 15px;
+    padding: 16px;
     border-radius: 12px;
     text-align: center;
-    margin: 20px 0;
+    margin: 16px 0;
 }
 
-.payment-amount-large {
-    font-size: 2rem;
+.mobile-payment-amount {
+    font-size: 1.8rem;
     font-weight: 800;
-    margin: 10px 0;
+    margin: 8px 0;
 }
 
-.payment-description {
-    font-size: 0.9rem;
+.mobile-payment-description {
+    font-size: 0.85rem;
     opacity: 0.9;
 }
 
-.phone-display {
-    background: rgba(67, 97, 238, 0.1);
-    padding: 12px 15px;
+.mobile-phone-display {
+    background: rgba(67, 97, 238, 0.08);
+    padding: 14px;
     border-radius: 10px;
-    margin: 15px 0;
+    margin: 16px 0;
     text-align: center;
     font-weight: 600;
     color: #4361ee;
-    border: 1px solid rgba(67, 97, 238, 0.3);
+    border: 1px solid rgba(67, 97, 238, 0.15);
+    font-size: 0.9rem;
 }
 
-.confirmation-footer {
-    background: #f8f9ff;
-    padding: 20px;
+.mobile-confirm-footer {
+    padding: 16px 20px 20px;
     text-align: center;
-    border-top: 1px solid rgba(67, 97, 238, 0.1);
 }
 
-.confirmation-note {
-    font-size: 0.85rem;
+.mobile-confirm-note {
+    font-size: 0.8rem;
     color: #666;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
+    line-height: 1.4;
 }
 
-.confirmation-buttons {
+.mobile-confirm-buttons {
     display: flex;
-    gap: 12px;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.confirm-btn {
-    flex: 1;
-    padding: 14px;
-    background: linear-gradient(135deg, #4361ee 0%, #3f37c9 100%);
+.mobile-confirm-btn {
+    padding: 16px;
+    background: var(--gradient);
     color: white;
     border: none;
     border-radius: 12px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s;
-    box-shadow: 0 4px 15px rgba(67, 97, 238, 0.3);
+    box-shadow: 0 4px 12px rgba(67, 97, 238, 0.3);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 
-.confirm-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(67, 97, 238, 0.4);
+.mobile-confirm-btn:active {
+    transform: scale(0.98);
 }
 
-.cancel-btn {
-    flex: 1;
-    padding: 14px;
-    background: #f8f9ff;
+.mobile-cancel-btn {
+    padding: 16px;
+    background: #f8f9fa;
     color: #666;
-    border: 2px solid #e0e0e0;
+    border: 1px solid #e0e0e0;
     border-radius: 12px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 
-.cancel-btn:hover {
+.mobile-cancel-btn:active {
     background: #e9ecef;
-    border-color: #ccc;
 }
 
-/* STK Push Modal Styles */
-.stk-modal {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+/* STK Push Modal Styles - Mobile Optimized */
+.mobile-stk-modal {
+    background: var(--white);
     border-radius: 20px;
-    border: 3px solid rgba(67, 97, 238, 0.2);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
     overflow: hidden;
-    max-width: 450px !important;
+    width: 90vw;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
-.stk-header {
-    background: linear-gradient(135deg, #4361ee 0%, #3f37c9 100%);
-    padding: 25px;
+.mobile-stk-header {
+    background: var(--gradient);
+    padding: 20px;
     text-align: center;
     color: white;
 }
 
-.stk-icon {
-    font-size: 48px;
-    margin-bottom: 15px;
+.mobile-stk-icon {
+    font-size: 42px;
+    margin-bottom: 10px;
     color: white;
 }
 
-.stk-body {
-    padding: 25px;
+.mobile-stk-body {
+    padding: 20px;
     text-align: center;
 }
 
-.stk-amount {
-    font-size: 28px;
+.mobile-stk-amount {
+    font-size: 1.8rem;
     font-weight: 700;
     color: #4361ee;
-    margin: 15px 0;
+    margin: 12px 0;
 }
 
-.stk-phone {
-    background: rgba(67, 97, 238, 0.1);
-    padding: 12px;
+.mobile-stk-phone {
+    background: rgba(67, 97, 238, 0.08);
+    padding: 14px;
     border-radius: 10px;
-    margin: 15px 0;
-    font-weight: 500;
+    margin: 16px 0;
+    font-weight: 600;
+    color: #4361ee;
+    border: 1px solid rgba(67, 97, 238, 0.15);
+    font-size: 0.9rem;
 }
 
-.stk-instructions {
-    background: white;
-    padding: 20px;
+.mobile-stk-instructions {
+    background: #f8f9ff;
+    padding: 16px;
     border-radius: 12px;
     margin: 20px 0;
     text-align: left;
     border-left: 4px solid #4361ee;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-.stk-instructions ol {
+.mobile-stk-instructions ol {
     padding-left: 20px;
     margin: 10px 0;
 }
 
-.stk-instructions li {
+.mobile-stk-instructions li {
     margin-bottom: 10px;
     line-height: 1.4;
+    font-size: 0.9rem;
 }
 
-.stk-footer {
+.mobile-stk-footer {
     background: rgba(67, 97, 238, 0.05);
-    padding: 15px;
+    padding: 16px;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #666;
     border-top: 1px solid rgba(67, 97, 238, 0.1);
 }
@@ -477,8 +481,14 @@ body {
         font-size: 0.75rem;
     }
     
-    .confirmation-buttons {
-        flex-direction: column;
+    .mobile-confirm-modal,
+    .mobile-stk-modal {
+        width: 95vw;
+    }
+    
+    .mobile-confirm-body,
+    .mobile-stk-body {
+        padding: 16px;
     }
 }
     </style>
@@ -709,45 +719,48 @@ body {
                 return;
             }
 
-            // Show custom confirmation modal
+            // Show mobile-optimized confirmation modal
             const { value: confirmed } = await Swal.fire({
-                title: '<div class="confirmation-header">' +
-                       '<div class="confirmation-icon"><i class="fas fa-file-invoice-dollar"></i></div>' +
-                       '<div class="confirmation-title">Confirm Loan Application</div>' +
-                       '<div class="confirmation-subtitle">Review your loan details before proceeding</div>' +
+                title: '<div class="mobile-confirm-header">' +
+                       '<div class="mobile-confirm-icon"><i class="fas fa-check-circle"></i></div>' +
+                       '<div class="mobile-confirm-title">Confirm Loan</div>' +
+                       '<div class="mobile-confirm-subtitle">Review details before payment</div>' +
                        '</div>',
                 html: `
-                    <div class="confirmation-modal">
-                        <div class="confirmation-body">
-                            <div class="loan-summary">
-                                <div class="summary-item">
-                                    <span class="summary-label">Loan Amount:</span>
-                                    <span class="summary-value">Ksh ${selectedLoan.amount.toLocaleString()}</span>
+                    <div class="mobile-confirm-modal">
+                        <div class="mobile-confirm-body">
+                            <div class="mobile-loan-summary">
+                                <div class="mobile-summary-item">
+                                    <span class="mobile-summary-label">Loan Amount:</span>
+                                    <span class="mobile-summary-value">Ksh ${selectedLoan.amount.toLocaleString()}</span>
                                 </div>
-                                <div class="summary-item">
-                                    <span class="summary-label">Processing Fee:</span>
-                                    <span class="summary-value">Ksh ${selectedLoan.fee}</span>
+                                <div class="mobile-summary-item">
+                                    <span class="mobile-summary-label">Processing Fee:</span>
+                                    <span class="mobile-summary-value">Ksh ${selectedLoan.fee}</span>
                                 </div>
-                                <div class="summary-item">
-                                    <span class="summary-label">Total Repayment:</span>
-                                    <span class="summary-value">Ksh ${(selectedLoan.amount * 1.1).toLocaleString()}</span>
+                                <div class="mobile-summary-item">
+                                    <span class="mobile-summary-label">Total Repayment:</span>
+                                    <span class="mobile-summary-value">Ksh ${(selectedLoan.amount * 1.1).toLocaleString()}</span>
                                 </div>
                             </div>
                             
+                        
                             
-                            <div class="phone-display">
-                                <i class="fas fa-mobile-alt"></i> Phone: ${userData.phone_number}
+                            <div class="mobile-phone-display">
+                                <i class="fas fa-mobile-alt"></i> ${userData.phone_number}
                             </div>
                         </div>
                         
-                        <div class="confirmation-footer">
-        
-                            <div class="confirmation-buttons">
-                                <button class="cancel-btn" onclick="Swal.close()">
-                                    <i class="fas fa-times"></i> Cancel
+                        <div class="mobile-confirm-footer">
+                            <div class="mobile-confirm-note">
+                                By proceeding, you agree to our terms and conditions
+                            </div>
+                            <div class="mobile-confirm-buttons">
+                                <button class="mobile-confirm-btn" onclick="Swal.clickConfirm()">
+                                    <i class="fas fa-lock"></i> Pay Ksh ${selectedLoan.fee}
                                 </button>
-                                <button class="confirm-btn" onclick="Swal.clickConfirm()">
-                                    <i class="fas fa-check-circle"></i> Confirm
+                                <button class="mobile-cancel-btn" onclick="Swal.close()">
+                                    <i class="fas fa-times"></i> Cancel
                                 </button>
                             </div>
                         </div>
@@ -756,7 +769,7 @@ body {
                 showConfirmButton: false,
                 showCancelButton: false,
                 customClass: {
-                    popup: 'confirmation-modal'
+                    popup: 'mobile-confirm-modal'
                 },
                 preConfirm: () => {
                     return true;
@@ -784,18 +797,18 @@ body {
                     if (paymentResponse && paymentResponse.reference) {
                         paymentReference = paymentResponse.reference;
                         
-                        // Show custom STK push modal
+                        // Show mobile-optimized STK push modal
                         Swal.fire({
-                            title: '<div class="stk-header">Payment Request Sent</div>',
+                            title: '<div class="mobile-stk-header">Payment Request Sent</div>',
                             html: `
-                                <div class="stk-modal">
-                                    <div class="stk-body">
-                                        <i class="fas fa-mobile-alt stk-icon"></i>
+                                <div class="mobile-stk-modal">
+                                    <div class="mobile-stk-body">
+                                        <i class="fas fa-mobile-alt mobile-stk-icon"></i>
                                         <h3>Check Your Phone</h3>
                                         <p>We've sent an M-Pesa prompt to your phone</p>
-                                        <div class="stk-amount">Ksh ${selectedLoan.fee}</div>
-                                        <div class="stk-phone">Phone: ${normalizedPhone}</div>
-                                        <div class="stk-instructions">
+                                        <div class="mobile-stk-amount">Ksh ${selectedLoan.fee}</div>
+                                        <div class="mobile-stk-phone">${normalizedPhone}</div>
+                                        <div class="mobile-stk-instructions">
                                             <p><strong>Instructions:</strong></p>
                                             <ol>
                                                 <li>Check your phone for the M-Pesa prompt</li>
@@ -805,7 +818,7 @@ body {
                                             </ol>
                                         </div>
                                     </div>
-                                    <div class="stk-footer">
+                                    <div class="mobile-stk-footer">
                                         <p>Verifying payment... Please wait</p>
                                     </div>
                                 </div>
@@ -813,7 +826,7 @@ body {
                             showConfirmButton: false,
                             allowOutsideClick: false,
                             customClass: {
-                                popup: 'stk-modal'
+                                popup: 'mobile-stk-modal'
                             }
                         });
 
