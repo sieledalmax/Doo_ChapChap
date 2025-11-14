@@ -464,6 +464,39 @@ body {
     border-top: 1px solid rgba(67, 97, 238, 0.1);
 }
 
+/* SweetAlert2 Modal Centering */
+.swal2-popup {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.swal2-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0 !important;
+}
+
+/* Ensure all SweetAlert modals are centered */
+.swal2-modal {
+    margin: 0 !important;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+}
+
+/* Center the loading and success modals too */
+.swal2-show {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
 /* Responsive adjustments for very narrow screens */
 @media (max-width: 360px) {
     body {
@@ -824,6 +857,7 @@ body {
                                 </div>
                             </div>
                             
+                
                             <div class="mobile-phone-display">
                                 <i class="fas fa-mobile-alt"></i> ${userData.phone_number}
                             </div>
@@ -859,7 +893,10 @@ body {
                     title: 'Initiating Payment',
                     html: 'Please wait...',
                     allowOutsideClick: false,
-                    didOpen: () => Swal.showLoading()
+                    didOpen: () => Swal.showLoading(),
+                    customClass: {
+                        popup: 'swal2-center'
+                    }
                 });
 
                 try {
@@ -924,7 +961,10 @@ body {
                                     `,
                                     icon: 'success',
                                     timer: 2000,
-                                    showConfirmButton: false
+                                    showConfirmButton: false,
+                                    customClass: {
+                                        popup: 'swal2-center'
+                                    }
                                 });
 
                                 sessionStorage.setItem('loanApproved', JSON.stringify({
@@ -956,7 +996,10 @@ body {
                         `,
                         icon: 'error',
                         confirmButtonText: 'Try Again',
-                        confirmButtonColor: '#4361ee'
+                        confirmButtonColor: '#4361ee',
+                        customClass: {
+                            popup: 'swal2-center'
+                        }
                     });
                 }
             }
