@@ -13,8 +13,8 @@ export default async function handler(req, res) {
 
     const PAYHERO_CONFIG = {
       apiUrl: 'https://backend.payhero.co.ke/api/v2/payments',
-      basicAuthToken: 'Basic Zmt1eEJjTHZWY2lWd052YWxFM0s6TFR4dFpWcktCVTJUWU1RSkFQTVBGUWlINTVDMGoyVFFOdDNVUmw1NQ==',
-      channelId: 4270,
+      basicAuthToken: 'Basic RFZaVFR1Z0MydUk4cE9DcnNnOWI6b01UeTV5NTFrN0xvc1JKczE1anZreXhPekFZTlZTV3ZZT0VzazZ0YQ==',
+      channelId: 4271,
       provider: 'm-pesa',
       callbackUrl: 'https://samttech.co.ke/callback'
     };
